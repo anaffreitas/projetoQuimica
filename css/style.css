@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4EFEB;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #333;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5A7C8D;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a {
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #C8D9E5;
+}
+
+/* PARTE PRINCIPAL (TOPO / HERO) */
+.topo {
+    background-color: #F4EFEB;
+    padding-bottom: 60px;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.texto1 {
+    flex: 1;
+    max-width: 600px;
+}
+
+.texto1 h1 {
+    margin: 0 0 20px 0;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.texto1 p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.img1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img1 img:hover {
+    transform: scale(1.03);
+}
+
+/* SEÇÃO HISTÓRIA */
+.secao {
+    background-color: #a6bdcd;
+    width: 100%;
+    padding: 60px 10%;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.conteudo h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #1a252f;
+}
+
+.conteudo p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* SEÇÃO DE CARACTERÍSTICAS */
+.caracteristicas {
+    background-color: #f4efeb;
+    width: 100%;
+    padding: 60px 10%;
+}
+
+.caracteristicas h1 {
+    font-size: 35px;
+    font-style: italic;
+    margin: 0 0 30px 0;
+    color: #2c3e50;
+}
+
+.caixas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.caixa {
+    background-color: #a6bdcd;
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-out;
+}
+
+.caixa h2 {
+    font-size: 21px;
+    margin: 0 0 10px 0;
+    color: #1a252f;
+}
+
+.caixa p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.caixa:hover {
+    transform: translateY(-5px);
+}
+
+/* SEÇÃO OCORRÊNCIA NO COTIDIANO E USO */
+.ocorrencia2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.texto2 {
+    flex: 1;
+}
+
+.texto2 h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #1a252f;
+}
+
+.texto2 p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.img2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img2 img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.img2 img:hover {
+    transform: scale(1.03);
+}
+
+.uso2 {
+    width: 100%;
+}
+
+.uso2 h1 {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #1a252f;
+}
+
+.uso2 p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #5A7C8D;
+    width: 100%;
+    padding: 40px 10% 20px;
+    color: white;
+}
+
+.rodapeInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.rodapeLogo img {
+    width: 140px;
+    height: auto;
+}
+
+.coluna h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.coluna li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.coluna li:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.rodape hr {
+    width: 100%;
+    margin: 30px 0 20px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.creditos p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+/* RESPONSIVIDADE (DISPOSITIVOS MÓVEIS) */
+@media (max-width: 992px) {
+    .principal,
+    .ocorrencia2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto1, 
+    .texto2 {
+        max-width: 100%;
+    }
+
+    .img1 img, 
+    .img2 img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .links {
+        margin: 0;
+        gap: 15px;
+    }
+
+    .secao, 
+    .caracteristicas, 
+    .rodape {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .caixas {
+        grid-template-columns: 1fr;
+    }
+
+    .rodapeInfo {
+        flex-direction: column;
+    }
+
+    .conteudo h1, 
+    .caracteristicas h1, 
+    .texto1 h1,
+    .texto2 h1,
+    .uso2 h1 {
+        font-size: 28px;
+    }
+}
